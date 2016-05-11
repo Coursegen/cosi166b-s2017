@@ -1,0 +1,15 @@
+---
+title: Product Reviewers
+---
+#### Intro
+* <%= link_to_incubator :product_reviewer_meetings %>
+
+#### Panel Members and Product pairups
+
+<% table = ::TableHelper.new(:default) %>
+<% table.headers("Name", "email", "Projects") %>
+<% table.row("Andy Singleton", "andy@assembla.com", "Projects") %>
+<% table.row("Jacob Murphy", "jcmurphy@brandeis.edu", "Projects") %>
+<% table.row("Eric Silverstein + Ezra Freedman", "eric.silberstein@drugdev.com  Ezra.Freedman@drugdev.com", "Projects") %>
+<% table.row("Paul Kleppner", "pkleppner@gmail.com", "Projects") %>
+<%= table.render %>

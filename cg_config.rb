@@ -16,11 +16,10 @@ COURSE_ABBREV = "166b"
 
 # Schedule information. Note that Monday is day 0
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
-  first_day: "jan-13-2016",
-  weekdays: [:monday, :wednesday, :thursday],
+  first_day: "jan-17-2017",
+  weekdays: [:tuesday, :thursday, :friday],
   number: 39,
-  skips: ["jan-18-2016", "feb-15-2016", "feb-17-2016", "feb-18-2016", "mar-28-2016",
-          "apr-21-2016", "apr-25-2016", "apr-27-2016", "apr-28-2016"])
+  skips: [])
 
 # Sections in tguhe right hand margin of the page
 # Bullet choices are :dash, :star, :plus, :minus

@@ -6,7 +6,6 @@ preprocess do
   Toc.instance.prepare @items, SECTION_CONFIG
 end
 
-
 compile '/bootstrap/**/*' do
   nil
 end
@@ -39,7 +38,7 @@ compile '/**/*' do
   elsif item[:type] == "subsection"
     nil
   elsif item[:extension] == "haml"
-    filter :haml;
+    filter :haml
     layout '/course.*'
   else
     item[:extension].split('.').reverse.each do
@@ -67,6 +66,10 @@ route "/tipuesearch_logic/tipuesearch_content.*" do
   '/tipuesearch/tipuesearch_content.js'
 end
 
+# Select which .md.erb becomes the home page of the site
+route '/content/welcome/02_coursetoc.md.erb' do
+  '/index.html'
+end
 
 route '/chalkmark/**/*' do
   @item.identifier.to_s
@@ -82,7 +85,7 @@ route '/**/*.ical.erb' do
 end
 
 # Select which .md.erb becomes the home page of the site
-route '/content/intro/01_coursetoc.md.erb' do
+route '/content/intro/syllabus.md.erb' do
   '/index.html'
 end
 
@@ -92,7 +95,7 @@ route '/**/*' do
   elsif item.binary?
     item.identifier.to_s
   elsif item.identifier == "/search_logic/tipuesearch_content/"
-      item.identifier.chop + '.' + item[:extension] rescue fail "in route * in Rules"
+    item.identifier.chop + '.' + item[:extension] rescue fail "in route * in Rules"
   elsif item[:status] == "hidden"
     nil
   elsif item[:type] == "subsection"

@@ -21,7 +21,7 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
   number: 39,
   skips: [])
 
-# Sections in tguhe right hand margin of the page
+# Sections in the right hand margin of the page
 # Bullet choices are :dash, :star, :plus, :minus
 SECTION_CONFIG = [
   SectionDef.new("Introduction", "intro", hidden: false, type: :section, bullet: :star),

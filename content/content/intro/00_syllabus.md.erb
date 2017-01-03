@@ -6,7 +6,7 @@ title: Syllabus
 <% tbh.row("Instructors", "Pito Salas") %>
 <% tbh.row("Class Times", "Tuesday and Thursday, 3:30pm to 4:50pm, Wednesday 2:00pm-4:50pm (lab)") %>
 <% tbh.row("Location", "TBD") %>
-<% tbh.row("Office Hours", "On request") %>
+<% tbh.row("Office Hours", "https://calendly.com/pitosalas/ftf") %>
 <% tbh.row("Prerequisites", "COSI 12b and COSI 21a") %>
 <% tbh.row("Homework", "Homework assignments for every class; Major Software Engineering project; Team assignments. Success in this 6 credit hour course is based on the expectation that students will spend a minimum of 12 hours of study time per week in preparation for class (readings, papers, discussion sections, preparation for exams, etc.).  ") %>
 <% tbh.row("Grading", "0-100 based, weighted by type of submissions. No tests.") %>
@@ -30,15 +30,15 @@ We cover a lot of ground in this course, and quite rapidly. Here are the central
 #### Additional information
 
 ##### Pre-requisites or permission
-Cosi21a and permission of the instructor are required for admission to this course.
+Cosi21a is required for admission to this course.
 
 ##### Pre-work
-Students have all kinds of computers. I have nothing against Microsoft Windows, and you could take this course using just Microsoft Windows, but you're life (and ours) is just going to be more difficult. It just seems that the open source tools and libraries we use don't like Windows. So for this course, if your computer is set up with just windows, you are **required** to set up a Linux parition. It's not hard. Here are the details: <%= link_to_topic :linux_partition %>
+Students have all kinds of computers. I have nothing against Microsoft Windows, and you could take this course using just Microsoft Windows, but you're life (and ours) is just going to be more difficult. It just seems that the open source tools and libraries we use don't like Windows. So for this course, if your computer is set up with just windows, you are **required** to set up a Linux parition or a vagrant virtual box. **This is mandatory**
+
+Look here for the details of the <%= link_to_section :background, :required_preparation %>
 
 <%= include_topic :syllabus_change_policy %>
-
-#### Further details
+#### Further detail
 * How grading works: <%= link_to_background :grading %>
-* Required pre-work: * <%= link_to_background :pre_work %>
 * Detailed learning objectives: <%= link_to_topic :goals_cosi166 %>
 * Complete list of lectures: <%= link_to_intro :coursetoc %>

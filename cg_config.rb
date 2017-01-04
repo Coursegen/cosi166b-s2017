@@ -18,6 +18,8 @@ COURSE_ABBREV = "166b"
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
   first_day: "jan-17-2017",
   weekdays: [:tuesday, :wednesday, :thursday],
+  start_times: ["15:30", "14:00", "15:30"],
+  end_times: ["16:50", "16:50", "16:50"],
   number: 39,
   start_time: "15:30",
   end_time: "16:50",

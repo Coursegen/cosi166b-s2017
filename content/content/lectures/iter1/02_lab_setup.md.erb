@@ -7,35 +7,46 @@ homework: Work on movies-1; learn GIT; review product Candidates; get to Lesson 
 
 **Legend**: <%=partbadge%>:Participation <%= timebadge %>:Early <%= pdfbadge %>:PDF <%=codebadge %>:Dropbox
 
-* All your project work (other than the Portfolio) will be using Git and Github. Git is (as of now) one of the most popular "source code management" utilities. Students that don't really master it will have a hard time throughout the course. It deserves your carefull attention. I have listed several useful links at the end of this assignment: [The Git Book](http://git-scm.com/book) - Read the first two chapters and do all the technical steps on your computer and using an account on Github. Really try and understand this.
-* <%= partbadge %>Begin working on <%= link_to_topic :pa_movies_1 %>. This assignment will get you to write some basic code with Ruby. You will learn how to read files work with data in arrays and hashes. Remember that your work should be happening inside your <%= link_to_intro :portfolio %>.
-* Continue with [Learn Ruby The Hard Way](http://learnrubythehardway.org/book/preface.html). Your success in the whole course will be strongly affected by how comfortable you get with Ruby. It's a really fun and interesting language.You should be at least up to Lesson 18 where you will learn about working with files. You should be up to Remember that your work should be happening inside your <%= link_to_intro :portfolio %>
-* Read up on all the  <%= link_to_incubator :prod_candidates %> that are available. These are just to give you ideas! You should come up with your own! Try to undertand and visualize what each one might be about. Remember the caveat: Don't set the bar at "this is the most wonderful product idea I ever saw". Set it at "this is a product that could be interesting to develop and work on."
+1. All your project work (other than the Portfolio) will be using Git and Github. Git is (as of now) one of the most popular "source code management" utilities. Students that don't really master it will have a hard time throughout the course. It deserves your carefull attention. I have listed several useful links at the end of this assignment: [The Git Book](http://git-scm.com/book) - Read the first two chapters and do all the technical steps on your computer and using an account on Github. Really try and understand this.
+1. <%= partbadge %> Begin working on <%= link_to_topic :pa_movies_1 %>. This assignment will get you to write some basic code with Ruby. You will learn how to read files work with data in arrays and hashes. Remember that your work should be happening inside your <%= link_to_intro :portfolio %>.
+1. Continue with [Learn Ruby The Hard Way](http://learnrubythehardway.org/book/preface.html). Your success in the whole course will be strongly affected by how comfortable you get with Ruby. It's a really fun and interesting language.You should be at least up to Lesson 18 where you will learn about working with files. You should be up to Remember that your work should be happening inside your <%= link_to_intro :portfolio %>
 
 #### Homework Discussion
 * What do you think of git? What is the purpose of Git. Is it like anything else you've used before?
 * What progress do you have on Movies so far?
 * New product ideas?
 
+#### Computer Setup
+* Make sure you have installed:
+	* Ruby 2.4
+	* Rails 5.x
+	* git
+* If you have a Mac, install
+	* Homebrew
+	* rbenv
+
 #### How "Portfolio" will work
 * <%= link_to_intro :portfolio %>
 
-#### Ruby Discussion
-* Experiment: [Post Your Questions or Vote on other questions](https://www.polleverywhere.com/pitosalas)
+#### Github open play instructions
+* Notes about Git and Github: <%= link_to_topic :git %>
 
-#### Lab Objectives
-
-* Practice your Unix command line.
-* Create a Github account and experiment
-	* ONE subdirectory per project!
-	* Git init the subdir
-	* Add it as a public repo on Github
-* Check your Ruby installation
-* Continue with Ruby the hard way
-* Continue with <%= link_to_topic :pa_movies_1 %>.
-
-#### Reference links
-* Take a look at our own <%= link_to_topic :git %>. You will find helpful info and several other links.
+1. Everyone sign up to a free Github account
+1. Make sure you know your github username and password
+1. Locate the **HTTPS clone URL** (not the SSH url) within here: https://github.com/Cosi-166/my-play-project
+1. Everyone clone this repo to your top level portfolio directory: [my-play-project](https://github.com/Cosi-166/my-play-project): `git clone https:\\xxxx`
+1. Change to the directory that was created by git clone (`my-play-project`)
+1. Run your text editor and create a file and put some text into it
+1. Check the status of your repo (`git status`)
+1. Add that new file to the staging area for git (`git add`)
+1. Now with that one change, create a new git commit (`git commit`)
+1. Your local copy of the repo now has one more commit than the server had
+1. But notice that all your classmates are doing the same, so, there may already be some more commits on the server. So just to make sure, pull the state down of the repo which is on the server. (`git pull`)
+1. Now push your repo (and all its commits) to the server (`git push`)
+1. Double check what the state of your local repo is (`git status`)
+1. Now locate a file that you didn't create, and make a change to it using your text editor.
+1. Follow the same steps above to send that change up to the server
+1. Continue to play and play and play*
 
 #### Next Class
 * Let's review: <%= link_to_next_lecture %>

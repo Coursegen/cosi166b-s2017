@@ -1,18 +1,46 @@
+/*Theme settings here*/
+
 @import url(//fonts.googleapis.com/css?family=Telex);
 
-.navbar-inverse {
-	background-color: black;
+.themefg {
+  color: rgb(194, 12, 10);
 }
 
-.navbar a.navbar-brand {
+.themebg {
+  background-color: rgb(169, 117, 107);
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: telex;
+	color: rgb(147, 19, 18);
+}
+
+a {
+  color: rgb(58, 89, 181);
+}
+
+.nav-btn {
+  color: white;
+}
+
+/*Don't change below here*/
+
+div.nav-btn {
+  padding-top:5px;
+}
+
+.navbar a.navbar-title {
 	color: white;
 	padding-top: 7px;
 }
- 
+
 .navbar {
-	min-height: 35px;
-	margin-bottom: 1px;
+	/*margin-bottom: 1px;*/
+  min-height: 0px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
+
 
 .navbar a:hover {
 	color: white;
@@ -23,19 +51,25 @@
 	color: light-blue;
 }
 
+.navbar-title {
+  float: left;
+  height: 30px;
+  font-size: 18px;
+  line-height: 20px
+}
+
 .navbar .input-group-sm input{
 	height: 22px;
 	width: 150px;
 	margin-top: 6px;
 }
 
-h1, h2, h3, h4, h5{
-	font-family: telex;
-	color: rgb(21, 123, 207);
-}
-
 h3 {
 	margin-bottom: 15px;
+}
+
+h3.body-header {
+  margin-bottom: -5px;
 }
 
 h4 {
@@ -98,7 +132,7 @@ footer {
 }
 
 .glyphicon-small {
-    font-size: 10px; 
+    font-size: 10px;
 }
 
 /* Search Page */
@@ -178,8 +212,10 @@ div.tipue_search_content_loc a {
 	background-color: #f3f3f3;
 }
 
-
-
+.helpful
+{
+  visibility: hidden;
+}
 
 @media (max-width: 980px) {
 
@@ -190,4 +226,3 @@ div.tipue_search_content_loc a {
 	  padding-right: 5px;
 	}
 }
-

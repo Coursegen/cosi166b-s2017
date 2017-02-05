@@ -1,28 +1,24 @@
 ---
-title: Implementing the Database
+title: (LAB) Implementing the Database
 desc: Applying what we learned to an actual db implementation
-homework: 1) Learn about NoSql database; 2) Read AND do Chapter 5 and 6 of AWDR, submit warmups; 3) Continue working on Mazes homework
+homework:
 ---
 <%= homework_hdr %>
-* **NoSql dabases:** There's a 'new' generation of databases which are non-relational often known as NOSQL databases. Here's one article about it: [NoSQL vs SQL](https://www.udemy.com/blog/nosql-vs-sql-2/). There are many many more. Do your own additional research and write your own view from that research about the advantages and disadvantages of NoSQL vs. 'traditional' SQL databases. Include a link to your source(s). <%= deliverable "Your report, 1 page or less. Pdf. Include name and assignment #" %>
-* **Reading:** Read \[AWDR\]Chapter 5 and 6. In chapter 5 Notice how he introduces what I called <%= link_to_topic :ux_flows %>. He calls it a Page Flow, but it's the same exact idea. You need this because you won't be able to code the app without knowing what the flow is. It's fundamental! And also, notice how he discusses an initial guess at application data, which is the same as what you've been doing on your projects!. In Chapter 6, Notice that `rails new depot` creates a directory called "depot" whereever you are. So in cd to your portfolio directory before doing your that command. It is important that you actually follow along and do all the code in Chapter 6, prove to yourself that it runs. You will discover that to write a web app you need to use many different 'langauges': Ruby, Html, css, and other languages. Don't expect to understand everything, we will be going over this several more times. But try, really try. <%= deliverable "Do the warmup assignment for the reading." %>
-* **Mazes:** Continue working Programming Assignment 3, <%= link_to_topic :pa_mazes %>. As usual, you will be doing your coding in your <%= link_to_intro :portfolio %>, directory `mazes`.
-* **Projects:** You should be working or completed steps **GIT, DOCUMENTATION, PLANSKEL, SHEMASKEL, BUILDSKEL, STORYSDV, PAPERSDV, SCHEMASDV**.
+**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
+
+1. <%= partbadge %> <%= timebadge %> <%= pdfbadge %> **RORT:** Read [Ruby on Rails Tutorial (\[RORT\])](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 3. While we are working towards having a web site with dynamically generated web pages, a good place to start is with static pages, which is what this chapter is about. As you recall, at the most basic level, a web server receives an http request including a URL, and responds with html which is then displayed in the browser. Also we are first introduced to writing unit tests. There is a lot to learn in this chapter so take your time, and ideally type in the examples and get them to work! Take your time and see if you can make it all the way to the end and get it all to work. You will hit snags. Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
+  * In the context of this chapter, what is a static page, and what is a dynamic page?
+  * What does the statement "render html: "Hello world" do? (Listing 3.4 of the chapter)
+  * How would you modify the sample app from the chapter, to have one more page, which would be "FAQ" page?
+  * Are there one or two things you are still confused by? If not, what one or two things were the most memorable about your reading? <%= deliverable "Do the warmup in Latte and submit by 8am on the day of class." %>
+1. **Projects:** You should be working or completed steps **GIT, DOCUMENTATION, PLANSKEL, SHEMASKEL, BUILDSKEL, STORYSDV, PAPERSDV, SCHEMASDV**.
 
 #### Homework Discussion
-* About PR Meetings on Thursday
-  * Nice job on presentations everyone
-  * How will PR scheduling work exactly
-  * PR meeting reports (see wednesday's meeting)
 * Lets talk about stuff you just didn't understand.
-* Nosql discussion. What's good, what's bad. What's your experience?
-
-#### The Rails directory structure
-* Lets take a quick tour of a rails app
+* Lets take a quick tour of a rails app and do some experimenting
 
 <%= include_topic :models %>
 <%= include_topic :database_migration %>
-<%= include_topic :ar_db_mechanics %>
 
 #### Look at next class
 * Look at homework <%= link_to_next_lecture %>

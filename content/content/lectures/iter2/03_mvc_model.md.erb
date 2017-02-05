@@ -4,29 +4,16 @@ desc: See how MVC works and is designed and implemented
 homework: 1) Db design practice; 2) Reading; 3) PR meeting report
 ---
 <%= homework_hdr %>
-* **Schema Practice**: Do <%= link_to_topic :hw_schema_design %>. <%= deliverable "Submit a pdf with a schema for each of the assignments, in the format suggested." %>
-* **Read Chapter 7**: Read \[ADWR\] Chapter 7, Validation and Unit Testing. We introduce an important new chapter in professional software engineering: validation and automated testing. To make your life easy, Rails lets you declare what the validations are for each part of a form. In doing this, Rails will check and issue reasonable errors on the page explaining if a validation has failed. Also rails can automatically create basic tests for your code, and you will see that they cause failures immediately because the test data does not meet the validations you asked for. Test Data? In order to run tests to see if your code is working as you expect, you always need some form of test data. If you want to ensure that price is never set to a negative number, for example, you need to have test data that asks for a negative price, and then see your error checking catch it. We call that test data "fixtures" or "test fixtures." Try your best to understand what's being covered. Do the code examples and get them to work. As usual, you will be doing your coding in your <%= link_to_intro :portfolio %>, directory `depot`. <%= deliverable "Answer the warmup questions in latte. Participation only!" %>
-* **PR Meeting Report**: Teams put together a report about last week's PR meeting. You should include the handout sheet that you gave the PRs, as well as a one page report. I know that the meeting you had with your PR at the end was brief and chaotic. But just report on any To-Do's you agreed to with the PR, any feedback you heard from the PR. Discuss as a team what your overall take away was. <%= team_deliverable "Two pdfs: the handout you prepared before the meeting and your report of the meeting" %>
-* **Projects**: You should be working on all steps up to URLSSDV. See <%= link_to_section :incubator, :project_roadmap %>
+**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
 
-#### Homework Discussion
-* About PR Meetings on Thursday
-  * Nice job on presentations everyone
-  * How will PR scheduling work exactly
-  * PR meeting reports (see wednesday's meeting)
- * Work due times:
-   * Warmups: On class day, 12pm; on Lab day: 8am.
-   * Everything else: on day and time of class.
-* Lets talk about stuff you just didn't understand in Chapters Read
+1. <%= pdfbadge %> **Schema Practice**: Do <%= link_to_topic :hw_schema_design %>. <%= deliverable "Submit a pdf with a schema for each of the assignments, in the format suggested." %>
+1. **Projects:** You should be working or completed steps **GIT, DOCUMENTATION, PLANSKEL, SHEMASKEL, BUILDSKEL, STORYSDV, PAPERSDV, SCHEMASDV**.
 
-#### Rails at a high level
-* Lets take a quick tour of a rails app
-* <%= link_to_topic :mvc_review %>
+<%= include_topic :mvc_review %>
 
 #### Models and the Database
-* <%= link_to_topic :models %>
-* <%= link_to_topic :database_migration %>
-* <%= link_to_topic :ar_db_mechanics %>
+<%= include_topic :database_migration %>
+* <%= include_topic :ar_db_mechanics %>
 
 #### Live coding
 * <%= link_to_topic :rails_db_models %>

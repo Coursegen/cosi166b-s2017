@@ -1,13 +1,25 @@
 ---
-title: Turning Stories into Mockups and UI
+title: (LAB) Turning Stories into Mockups and UI
 desc: We look at ways of turning ideas into user interface
-homework: Read and DO RORT Chapter 4
+homework: 1) Team fills out their team information page;
 cat: UX
 ---
 <%= homework_hdr %>
 **Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
-1. <%= partbadge %> <%= timebadge %> <%= pdfbadge %> **RORT:** Read [Ruby on Rails Tutorial (\[RORT\])](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 4, "Rails Flavored Ruby". This is anb easier chapter, reviewing a variety of Ruby topics that are extended in Rails. This is possible by the way because Ruby as a programming language is very extensible, and Rails takes advantage of this. It has not been unusual to notice features invented by the Rails team which over time get moved into Ruby core. This chapter is an excellent review of Ruby as well. As usual I really encourage and ask you to go through the code samples and actually type them in. You will see that it really helps your understanding and will assure your success in this course! Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
-  * Give me your explanation of what a symbol is in Ruby. Write a very brief few lines of Ruby to illustrate.
-  * What is meant by the idea that Ruby classes can be "opened up" or "reopened"?
-  * What is the difference between 'require' and 'require_relative' in Ruby?
-  * Are there one or two things you are still confused by? If not, what one or two things were the most memorable about your reading? <%= deliverable "Do the warmup in Latte and submit by 8am on the day of class." %>
+
+1. <%= partbadge %> **Team Information**: Each team creates an entry on the Team Information Page, including: Project Name, TA Partner, Product Reviewer, Url to Trello, Url to your github, Url to your Heroku. <%= team_deliverable "Updated team information page" %>
+1. <%= pdfbadge %> **Paper Prototype**: Read this paper about [Paper Prototyping](http://www.alistapart.com/articles/paperprototyping/). Design one paper prototype for your team's product. We will assess your work based on the care and thought you put into it, not on whether the UI itself is awesome. <%= deliverable "Readable image of your paper prototype. If you just take a cell phone picture of a drawing in pencil (worst case) it will not be legible." %>
+
+#### Optional Readings
+* Resources: [Paper Prototyping Helper Kit](http://www.userfocus.co.uk/resources/prototype.html)
+* [Effective Examples of Paper Prototyping](https://speckyboy.com/10-effective-video-examples-of-paper-prototyping/)
+* See lots of examples of [paper prototyping here](http://www.google.com/search?q=paper+prototyping&hl=en&safe=off&client=safari&rls=en&prmd=imvnsb&tbm=isch&tbo=u&source=univ&sa=X&ei=slDNT5TgBIW16AHc293MAg&ved=0CGYQsAQ&biw=1251&bih=840)
+* Another interesting article: [Test Paper Prototypes to Save Time and Money: The Mozilla Case Study](http://www.nngroup.com/articles/mozilla-paper-prototype/?utm_source=Alertbox&utm_campaign=76128ff738-Paper_Ptype_Touch_Screen_Readers_1045_08_31_2015&utm_medium=email&utm_term=0_7f29a2b335-76128ff738-40070533)
+
+<%= include_topic :user_stories %>
+<%= include_topic :mockups_prototypes %>
+<%= include_topic :paper_prototyping %>
+<%= include_topic :ux_flows %>
+
+#### Next Class
+* Look at homework <%= link_to_next_lecture %>

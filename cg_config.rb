@@ -19,11 +19,11 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
   first_day: "jan-17-2017",
   weekdays: [:tuesday, :wednesday, :thursday],
   start_times: ["15:30", "14:00", "15:30"],
-  end_times: ["16:50", "16:50", "16:50"],
+  end_times: ["16:50", "16:00", "16:50"],
   number: 39,
   start_time: "15:30",
   end_time: "16:50",
-  skips: ["feb-21-2017", "feb-22-2017", "feb-23-2017"])
+  skips: ["feb-9-2017", "feb-21-2017", "feb-22-2017", "feb-23-2017"])
 
 # Sections in the right hand margin of the page
 # Bullet choices are :dash, :star, :plus, :minus

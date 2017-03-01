@@ -6,30 +6,18 @@ desc: We actually continue on TDD from the previous class
 <%= homework_hdr %>
 **Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
 
-* Introduce automatic testing to your product
+1. <%= zipbadge %> **Product Test Automation**: Introduce automatic testing to your product
   * Read up about the rails-admin gem and install it into your team product.
   * Every individual member of each product team writes at least 3 Minitest-spec tests for the product
   * <%= team_deliverable "Commit latest version of your product to github" %>
   * <%= deliverable "Source file with the tests that YOU wrote in the product" %>
 * Introduce authentication to your product
-  * Read \[AWDRR\] Chapter 14. This homework asks you to apply all the techniques from that chapter to your product. You can also look at [The Rails Tutorial](https://www.railstutorial.org/book) for ideas. Below I give a possible way to divide up the work among your team members.. If you finish with 'your' part early you need to offer to help the other team members. I suggest that you all work around a table on your sections so you can ask questions etc. Check code into github regularly to allow sharing of the latest.
-  * Suggested plan of attack
-    * **Do not use the Devise gem unless you really really want to (suffer)**
-    * Decide with your team:
-      * What can an admin user do and not do
-      * What can a regular user do and not do
-      * What can someone who is not logged in do and not do
-    * **Hypothetical** division of labor
-      * Team member 1:
-        * Create a User model along the same lines as the chapter. Also their controller and view and to allow users to be managed. Write a test that verifies that a non-logged in user can access "protected parts" of your app
-      * Team member 2:
-        * Create and implement the Sessions controller, along the same line as the chaptes. Add the necessary routes for sessions. Write the tests for the new controller
-      * Team member 3:
-        * Implement the "authorization" part of the Chapter: "Limiting Access" etc. Also write the tests for that part
-      * Team member 4:
-        * Implement logic and test to make sure last admin doesn't get deleted
-    * <%= team_deliverable "link to your github account; a screencapture demonstrating that what you implemented works and that tests run." %> (how to do a <%= link_to_topic :screencast %>)
-    * <%= deliverable "Respond to warmup questions about Chapter 14 and authentication." %>
+1. <%= partbadge %> <%= timebadge %> <%= pdfbadge %> **RORT:** Read [Ruby on Rails Tutorial (\[RORT\])](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 7, "Sign Up". THis chapter covers routes, controllers and actions, reviewing what was demoed in class last week. You will encounter the vaunted `form_for` again. You will finally deploy what you have so far onto heroku.
+
+    As usual I really encourage and ask you to go through the code samples and actually type them in. You will see that it really helps your understanding and will assure your success in this course! Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
+
+    * This one is tricky: how come there's no password field in the database, while there is a validation of a password attribute on the User model. Let's have a careful answer here, because it's the only warmup question I am asking for!
+    * Are there one or two things you are still confused by? If not, what one or two things were the most memorable about your reading? <%= deliverable "Do the warmup in Latte and submit by 8am on the day of class." %>
 
 #### Optional Reading
 * [Ruby Debugging Magic CheatSheet](http://www.schneems.com/2016/01/25/ruby-debugging-magic-cheat-sheet.html)

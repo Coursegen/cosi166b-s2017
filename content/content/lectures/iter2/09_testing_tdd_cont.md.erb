@@ -1,27 +1,26 @@
 ---
 title: Testing and TDD Continued
-homework: 1) Introduce automatic testing to your product; 2) REad \[AWDRR\] Chapter 14 and do warmups; 3)Team implements authentication for their product
-desc: We actually continue on TDD from the previous class
+homework: 1) REad \[RORT\] Chapter 7 and do warmups
+desc: We continue on TDD from the previous class
+cat: TDD
 ---
 <%= homework_hdr %>
 **Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
 
-1. <%= zipbadge %> **Product Test Automation**: Introduce automatic testing to your product
-  * Read up about the rails-admin gem and install it into your team product.
-  * Every individual member of each product team writes at least 3 Minitest-spec tests for the product
-  * <%= team_deliverable "Commit latest version of your product to github" %>
-  * <%= deliverable "Source file with the tests that YOU wrote in the product" %>
-* Introduce authentication to your product
 1. <%= partbadge %> <%= timebadge %> <%= pdfbadge %> **RORT:** Read [Ruby on Rails Tutorial (\[RORT\])](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 7, "Sign Up". THis chapter covers routes, controllers and actions, reviewing what was demoed in class last week. You will encounter the vaunted `form_for` again. You will finally deploy what you have so far onto heroku.
 
     As usual I really encourage and ask you to go through the code samples and actually type them in. You will see that it really helps your understanding and will assure your success in this course! Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
 
     * This one is tricky: how come there's no password field in the database, while there is a validation of a password attribute on the User model. Let's have a careful answer here, because it's the only warmup question I am asking for!
     * Are there one or two things you are still confused by? If not, what one or two things were the most memorable about your reading? <%= deliverable "Do the warmup in Latte and submit by 8am on the day of class." %>
+1. **Start working on tomorrow's homework!**
+
+#### Disussion about preparation for PR meetings
+* Preparation
+* Report
 
 #### Optional Reading
 * [Ruby Debugging Magic CheatSheet](http://www.schneems.com/2016/01/25/ruby-debugging-magic-cheat-sheet.html)
-
 
 #### Testing in Rails
 <%= include_topic :testing_rails %>

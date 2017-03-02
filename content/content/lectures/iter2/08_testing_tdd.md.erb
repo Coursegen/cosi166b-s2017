@@ -44,44 +44,6 @@ homework: 1) Read several articles
 
 #### Let's take a tour of all the test bits that are created for free for you in Rails
 
-##### shell commands
-~~~~
-rails new shoes
-group :test do
-  gem 'minitest-spec-rails'
-end
-bundle
-rails generate scaffold Shoes name:string price:float color:string size:integer
-rake db:migrate
-~~~~
-
-##### shoe_test.rb
-
-<%= ruby_begin %>
-require 'test_helper'
-
-describe "Test Shoe Model" do
-  before do
-    Shoe.destroy_all
-    @shoe1 = Shoe.create(name: "Pito's Shoe")
-    @shoe2 = Shoe.create(name: "Black Beauties")
-  end
-
-  describe "Validations" do
-    it "successfully gets created" do
-      @shoe1.valid?.must_equal true
-    end
-  end
-
-  describe "All are found" do
-    it "finds them all" do
-      Shoe.all.length.must_equal 2
-    end
-  end
-
-end
-<%= ruby_end %>
-
 <%= include_topic :testing_concepts %>
 <%= include_topic :testing_pyramid %>
 <%= include_topic :testing_techniques %>

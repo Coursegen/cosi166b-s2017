@@ -10,7 +10,7 @@ homework: 1) Security related readings, write a response 2) Complete working on 
   * Read [Rails Security Guide](http://guides.rubyonrails.org/security.html)
   * Read about: [Brakeman Gem](https://github.com/presidentbeef/brakeman)
   * <%= deliverable "Submit a post (pdf) with some specific things that you will be able to use in your product from these two readings. This is an individual deliverable." %>
-1. <%= zipbadge %> **Rails PA2**: Complete and submit Rails PA2. Begin working on Rails PA3. <%= deliverable "PA 2 directory zipped up and submitted to Latte" %>
+1. <%= zipbadge %> **Rails PA2**: Complete and submit <%= link_to_topic :pa_rails_2 %>. Begin working on <%= link_to_topic :pa_rails_3 %>. <%= deliverable "PA 2 directory zipped up and submitted to Latte" %>
 1. **Teams:** You should be up to around steps **DB, UNITTEST, ACCTS, AUTHENT** of the <%= link_to_section :incubator, :project_roadmap %>
 
 ##### Review: resources in Rails
@@ -33,9 +33,8 @@ homework: 1) Security related readings, write a response 2) Complete working on 
 <%= include_topic :intro_auth %>
 
 #### Possible implementation strategies in Rails
-* Roll your own, using simple authentication
-* Look at other options: [Clearance](https://rubygems.org/gems/clearance) or [Sorcery]( https://github.com/NoamB/sorcery) or [Authlogic](http://www.rubydoc.info/github/binarylogic/authlogic)
-* My advice: Avoid Devise. From my personal experience Devise is a tempation because it looks so magical but in the end it made life difficult. Many many people like Devise so this is my personal advice. YMMV.
+* Roll your own, using simple authentication. My preferred approach for this course.
+* Look at other options: [Clearance](https://github.com/thoughtbot/clearance) or [Sorcery]( https://github.com/Sorcery/sorcery),  [Authlogic](http://www.rubydoc.info/github/binarylogic/authlogic), or [Devise](https://github.com/plataformatec/devise)
 
 #### Demos
 * <%= link_to_topic :clearance_authdemo %>

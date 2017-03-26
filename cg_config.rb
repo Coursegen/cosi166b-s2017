@@ -23,7 +23,7 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
   number: 39,
   start_time: "15:30",
   end_time: "16:50",
-  skips: ["feb-9-2017", "feb-21-2017", "feb-22-2017", "feb-23-2017"])
+  skips: ["feb-9-2017", "feb-21-2017", "feb-22-2017", "feb-23-2017", "apr-11-2017", "apr-12-2017", "apr-13-2017", "apr-18-2017"])
 
 # Sections in the right hand margin of the page
 # Bullet choices are :dash, :star, :plus, :minus

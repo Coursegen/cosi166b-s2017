@@ -1,17 +1,17 @@
 require 'coursegen'
 
 # bucket for AWS Deployment of the course
-AWS_BUCKET = "robotics"
+AWS_BUCKET = "cosi166b-s2017"
 
 # Local directory path for directory of content
-CONTENT_PATH = "/mydev/cr1"
+CONTENT_PATH = "/mydev/cosi166b-s2016"
 
 # Copyright string
 COPYRIGHT_STRING = "Copyright (2014-2017) R. Pito Salas, pitosalas@brandeis.edu"
 
 # Course short name
-COURSE_SHORT_NAME = "Robotics"
-COURSE_LONG_NAME = "Campus Rover: Robotics Lab"
+COURSE_SHORT_NAME = "COSI 166b"
+COURSE_LONG_NAME = "Software Engineering"
 COURSE_ABBREV = "166b"
 
 # Schedule information. Note that Monday is day 0

@@ -23,7 +23,8 @@ compile '/tipuesearch/**/*' do
 end
 
 compile "/tipuesearch_logic/tipuesearch_content.*" do
-  filter :erb
+  #filter :erb
+  nil
 end
 
 compile "/content/**/*.ical.erb" do
